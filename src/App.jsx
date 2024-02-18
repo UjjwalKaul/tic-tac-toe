@@ -10,6 +10,7 @@ function App() {
         <Player name="Player 2" symbol="O" />
 
       </ol>
+      Game
     </div>
   </main>
 }
