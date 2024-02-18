@@ -1,17 +1,20 @@
-import Player from "./components/Player"
+import Player from "./components/Player";
+import GameBoard from "./components/GameBoard";
 
 function App() {
-
-
-  return <main>
-    <div id="game-container">
-      <ol id="players">
-        <Player initialName="Player 1" symbol="X" />
-        <Player initialName="Player 2" symbol="O" />
-      </ol>
-      Game
-    </div>
-  </main>
+  return (
+    <main>
+      <div id="game-container">
+        <ol id="players">
+          <Player initialName="Player 1" symbol="X" />
+          <Player initialName="Player 2" symbol="O" />
+        </ol>
+        <ol>
+          <GameBoard />
+        </ol>
+      </div>
+    </main>
+  );
 }
 
-export default App
+export default App;
